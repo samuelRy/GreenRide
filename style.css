@@ -1,0 +1,311 @@
+@font-face {
+    font-family: Manrope;
+    src: url(font/Manrope-VariableFont_wght.ttf) format('truetype'),
+        url(font/Manrope-VariableFont_wght.woff) format('woff');
+    font-weight: 100 700;
+    font-style: normal;
+}
+
+*
+{
+    /*border: yellow solid 1px;*/
+    scroll-behavior: smooth;
+}
+
+#main-content
+{
+    padding: 0 10em 0 10em;
+}
+
+#contentM
+{
+    padding: 0 3em 0 3em;
+}
+
+body
+{
+    font-family: Manrope, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #14240F;
+    color: white;
+}
+
+header
+{
+    display: flex;
+    justify-items: space-between;
+    padding: 1em 5em 1em 5em;
+    font-size: small;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+#actual
+{
+    color: #30CC00;
+}
+
+#header-content
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav
+{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+}
+
+#book-button
+{
+    position: relative;
+    z-index: 9;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 3px 4px 4px #14240F;
+}
+
+.book-now:active
+{
+    box-shadow: inset 4px 2px 3px #14240F;
+    transition: none;
+}
+
+.book-now
+{
+    font-family: Manrope, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 8em;
+    height: 2.7em;
+    clip-path: inset(0 0.1em 0 0.1em round 0.3em);
+    background-color: #30CC00;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border: none;
+    margin-left: 2em;
+    cursor: pointer;
+    transition: ease 0.5s all;
+}
+
+.book-now:hover
+{
+    background-color: #38f000;
+    transform: scale(1.1);
+    transition: ease 0.5s all;
+}
+
+
+hr
+{
+    margin: 1em 0 1em 0;
+    height: 150%;
+}
+
+#hero
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vb;
+}
+
+#hero img
+{
+    width: 85%;
+    height: auto;
+}
+
+#hero-img
+{
+    position: absolute;
+    clip-path: inset(0 0.3em 0 0.3em round 0.3em);
+    z-index: 0;
+}
+
+#hero h1, #hero button, #hero p
+{
+    position: relative;
+    z-index: 10;
+}
+
+#hero h1
+{
+    font-size: 3em;
+    font-weight: 700;
+    position: relative;
+    top: 7%;
+}
+
+#hero p
+{
+    font-size: 1.1em;
+}
+
+#details
+{
+    position: relative;
+    z-index: 0;
+    font-size: 2em;
+}
+
+h2
+{
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+
+#details p
+{
+    font-size: 1.3rem;
+    font-weight: 100;
+    width: 75%;
+}
+
+#showcase
+{
+    padding: 0 0 1.3em 0em;
+}
+
+#showcase h2
+{
+    font-weight: 800;
+    font-size: 1.3em;
+}
+
+#cards-products
+{
+    display: flex;
+    gap: 2em;
+    padding: 0 2em 1em 2em;
+}
+
+#cards-products div
+{
+    background-color: #1F3617;
+    border: #3D6B2E solid 1px;
+    padding: 1em 1em 1.5em 1em;
+}
+
+#why-us h2
+{
+    font-weight: 800;
+    font-size: 1.3em;
+}
+
+#cards-products p
+{
+    color: #9CCF8C;
+}
+
+#products
+{
+    display: flex;
+    gap: 2.2em;
+    padding: 0 4em 0 4em;
+}
+
+#cards-about
+{
+    display: grid;
+    grid: 1fr 1fr / auto auto auto;
+    gap: 3em;
+}
+
+#cards-about p
+{
+    width: 85%;
+}
+
+#contact-us
+{
+    font-size: large;
+    margin-top: 3em;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+label
+{
+    font-size: 200;
+    margin-bottom: 0.5rem;
+    margin-left: 0.3rem;
+}
+
+input
+{
+    height: 3em;
+    padding: 0 1.5em 0 1.5em;
+}
+
+textarea
+{
+    padding: 1em 1.5em 0 1.5em;
+}
+
+input, textarea
+{
+    width: 17em;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: white;
+    background-color: #294A21;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    clip-path: inset(0 0.3em 0 0.3em round 0.4em);
+    margin-bottom: 1.5em;
+    font-family: Manrope, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input[type = "submit"]
+{
+    width: 6em;
+    height: 2.5em;
+    clip-path: inset(0 0.1em 0 0.1em round 0.3em);
+    background-color: #30CC00;
+    font-size: .9rem;
+    font-weight: 900;
+    color: #14240F;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    padding: 3em 0 2em 0;
+    color: #9CCF8C;
+    /*background-color: rgba(0, 0, 0, 0.2);*/
+}
+
+#footer-nav
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4em 0 4em;
+    width: 60%;
+    gap: 2em;
+    font-size: x-large;
+}
+#footer-nav a
+{
+    color: #9CCF8C;
+    
+}
