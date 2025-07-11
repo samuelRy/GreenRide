@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Allow existing files and directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite /something to /something.php
+RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L]
+
+# Optional: handle trailing slashes like /login/
+RewriteRule ^([a-zA-Z0-9_-]+)/$ $1.php [L]
+
+ErrorDocument 404 /green/404.php

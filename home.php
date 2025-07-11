@@ -1,3 +1,8 @@
+<?php 
+    header("Cache-Control: no-cache, no-store, must-revalidate");
+    header("Pragma: no-cache");
+    header("Expires: 0");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,38 +13,24 @@
     <title>🌱GreenRide</title>
 </head>
 <body>
-    <header>
-        <div id="logo">
-
-        </div>
-        <div id="header-content">
-            <nav>
-                <a href="home.html" id="actual">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-            <span id="book-button">
-                <button class="book-now">
-                    Book Now
-                </button>
-            </span>
-        </div>
-    </header>
-
-    <hr>
+    <?php
+    $currentPage = basename($_SERVER['PHP_SELF']);
+    include("header.php");
+    ?>
     
+    <hr>
     <div id="main-content">
-        <span><div id="hero">
-            <img src="images/Depth_6_Frame_0_resized.png" alt="rider on a bike" id="hero-img"/>
+        <div id="hero">
+            <img src="images/Rider_Image_Resized.png" alt="rider on a bike" id="hero-img"/>
             <h1>Explore Cotonou with GreenRide</h1>
-            <p>Discover the city's hidden gems on our eco-friendly bikes and scooters. Experience the freedom of sustainable urban mobility.</p>
+            <p>
+                Discover the city's hidden gems on our eco-friendly bikes and scooters. Experience the freedom of sustainable urban mobility.</p>
             <span id="book-button">
                 <button class="book-now">
                     Book Now
                 </button>
             </span>
-        </div></span>
+        </div>
         <div id="contentM">
             <div id="details">
                 <h2>Sustainable Urban Mobility</h2>
@@ -54,22 +45,22 @@
                 <h2>Our Services</h2>
                 <div id="cards-products">
                     <div>
-                        <img src="" alt="leaf icon">
-                        <h4>Eco-Friendly</h4>
+                        <img src="icon/leaf-icon.svg" alt="leaf icon">
+                        <h3>Eco-Friendly</h3>
                         <p>
                             Our bikes and scooters are powered by renewable energy, reducing your carbon footprint.
                         </p>
                     </div>
                     <div>
-                        <img src="" alt="marker icon">
-                        <h3>Explore Cotonou</h4>
+                        <img src="icon/marker-icon.svg" alt="marker icon">
+                        <h3>Explore Cotonou</h3>
                         <p>
                             Discover Cotonou's vibrant neighborhoods and hidden gems at your own pace.
                         </p>
                     </div>
                     <div>
-                        <img src="" alt="clock icon">
-                        <h3>Flexible Rentals</h4>
+                        <img src="icon/clock-icon.svg" alt="clock icon">
+                        <h3>Flexible Rentals</h3>
                         <p>
                             Rent by the hour, day, or week. We offer flexible options to fit your schedule.
                         </p>
@@ -78,21 +69,21 @@
 
                 <div id="products">
                     <div>
-                        <img src="" alt="a bike">
-                        <h4>Bike Rentals</h4>
+                        <img src="images/bike.png" alt="a bike" style="width: 350px; height: auto;">
+                        <h3>Bike Rentals</h3>
                         <p>
                             Explore Cotonou on our comfortable and eco-friendly bikes.
                         </p>
                     </div>
                     <div>
-                        <img src="" alt="a scooter">
+                        <img src="images/scooter.png" alt="a scooter" style="width: 350px; height: auto;">
                         <h4>Scooter Rentals</h4>
                         <p>
                             Zip through the city with ease on our electric scooters.
                         </p>
                     </div>
                     <div>
-                        <img src="" alt="people on bikes">
+                        <img src="images/riders.png" alt="people on bikes" style="width: 350px; height: auto;">
                         <h4>Guided Tours</h4>
                         <p>
                             Join our guided tours to discover the best of Cotonou.                    
@@ -106,33 +97,33 @@
                 <p>A new way to explore Cotonou in a mindful way</p>
                 <div id="cards-about">
                     <div>
-                        <img src="" alt="">
                         <h3>Premium Bikes</h3>
+                        <span class="feature-icon">🚴‍♂️</span>
                         <p>Modern fleet of electric and classic bikes, maintained daily for your safety and comfort.</p>
                     </div>
                     <div>
-                        <img src="" alt="">
                         <h3>Electric Scooters</h3>
+                        <span class="feature-icon">🛴</span>
                         <p>Fast and eco-friendly travels with our latest generation scooters, perfect for the city.</p>
                     </div>
                     <div>
-                        <img src="" alt="">
                         <h3>Environmental Impact</h3>
+                        <span class="feature-icon">🌍</span>
                         <p>Zero emissions, contribution to reforestation and raising awareness about sustainable mobility.</p>
                     </div>
                     <div>
-                        <img src="" alt="">
                         <h3>Simple Reservation</h3>
+                        <span class="feature-icon">📱</span>
                         <p>Easy online booking system, secure payment, and assistance 7 days a week.</p>
                     </div>
                     <div>
-                        <img src="" alt="">
                         <h3>Guaranteed Maintenance</h3>
+                        <span class="feature-icon">🔧</span>
                         <p>Equipment always in perfect condition thanks to our on-site maintenance workshop.</p>
                     </div>
                     <div>
-                        <img src="" alt="">
                         <h3>Tarifs Abordables</h3>
+                        <span class="feature-icon">💰</span>
                         <p>Competitive prices with flexible formulas: rental by the hour, half-day, or full day.</p>
                     </div>
                 </div>
@@ -145,7 +136,7 @@
                     <input type="text" name="name" id="name" placeholder="Your Name">
                     
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email" placeholder="Your Email" required>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
                     
                     <label for="message">Message</label>
                     <textarea type="text" name="message" id="message" required rows="10" placeholder="Your Message"></textarea>
@@ -156,21 +147,7 @@
         </div>
     </div>
 
-    <footer>
-        <div id="footer-nav">
-            <a href="#hero">Hero</a>
-            <a href="#details">Details</a>
-            <a href="#showcase">Showcase</a>
-            <a href="#contact-us">Contact</a>
-        </div>
-        <div id="social-media">
-            <a href="#"> <img src="" alt="twitter icon"> </a>
-            <a href="#"> <img src="" alt="facebook icon"> </a>
-            <a href="#"> <img src="" alt="instagram icon"> </a>
-        </div>
-        <div>
-            &copy; 2024 GreenRide. All rights reserved.
-        </div>
-    </footer>
+    <?php include("footer.php"); ?>
+    <script src="script.js"></script>
 </body>
 </html>
