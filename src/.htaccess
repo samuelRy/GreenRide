@@ -10,4 +10,4 @@ RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L]
 # Optional: handle trailing slashes like /login/
 RewriteRule ^([a-zA-Z0-9_-]+)/$ $1.php [L]
 
-ErrorDocument 404 /green/404.php
+ErrorDocument 404 /404.php
