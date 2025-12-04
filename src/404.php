@@ -10,6 +10,6 @@
         <p>Sorry, the page you are looking for does not exist.</p>
         <img src="icon/scooter-flyer.svg" alt="Scooter Flyer" id="logo-scooter-E">
     </div>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

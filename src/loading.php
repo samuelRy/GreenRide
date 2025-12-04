@@ -5,4 +5,4 @@
         <p>Please wait while we load the content.</p>
         <img src="icon/scooter-flyer.svg" alt="Scooter Flyer" id="logo-scooter-L">
     </div>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>

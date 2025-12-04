@@ -5,13 +5,10 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" lang="en">
-    <link rel="stylesheet" href="style.css">
-    
-    <title>🌱GreenRide</title>
-</head>
+<?php
+    $currentPage = basename($_SERVER['PHP_SELF']);
+    include("head.php");
+    ?>
 <body>
     <?php
     $currentPage = basename($_SERVER['PHP_SELF']);
@@ -148,6 +145,6 @@
     </div>
 
     <?php include("footer.php"); ?>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>
