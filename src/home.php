@@ -18,8 +18,8 @@
     <hr>
     <div id="main-content">
         <div id="hero">
-            <img src="images/Rider_Image_Resized.png" alt="rider on a bike" id="hero-img"/>
-            <h1>Explore Cotonou with GreenRide</h1>
+            <div style="display: flex; flex-direction: column; align-items: center;width: 90%;">
+                <h1>Explore Cotonou with GreenRide</h1>
             <p>
                 Discover the city's hidden gems on our eco-friendly bikes and scooters. Experience the freedom of sustainable urban mobility.</p>
             <span id="book-button">
@@ -27,6 +27,7 @@
                     Book Now
                 </button>
             </span>
+            </div>
         </div>
         <div id="contentM">
             <div id="details">
@@ -66,21 +67,21 @@
 
                 <div id="products">
                     <div>
-                        <img src="images/bike.png" alt="a bike" style="width: 350px; height: auto;">
+                        <img src="images/bike.png" alt="a bike" style="width: 80%; height: auto;">
                         <h3>Bike Rentals</h3>
                         <p>
                             Explore Cotonou on our comfortable and eco-friendly bikes.
                         </p>
                     </div>
                     <div>
-                        <img src="images/scooter.png" alt="a scooter" style="width: 350px; height: auto;">
+                        <img src="images/scooter.png" alt="a scooter" style="width: 80%; height: auto;">
                         <h4>Scooter Rentals</h4>
                         <p>
                             Zip through the city with ease on our electric scooters.
                         </p>
                     </div>
                     <div>
-                        <img src="images/riders.png" alt="people on bikes" style="width: 350px; height: auto;">
+                        <img src="images/riders.png" alt="people on bikes" style="width: 80%; height: auto;">
                         <h4>Guided Tours</h4>
                         <p>
                             Join our guided tours to discover the best of Cotonou.                    
@@ -145,6 +146,6 @@
     </div>
 
     <?php include("footer.php"); ?>
-    <script src="/script.js"></script>
+    
 </body>
 </html>

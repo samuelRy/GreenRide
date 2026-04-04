@@ -10,8 +10,7 @@
     ?>
     <hr>
     <div id="main-content">
-        <div id="hero">
-            <img src="images/Image_People_Riders.png" alt="people on a ride" id="hero-img" style="width: 95%; height: auto; filter: opacity(75%);"/>
+        <div id="heroA">
             <h1>Our Impact</h1>
             <p>GreenRide is committed to a sustainable future for Cotonou. 
                 We're not just a rental service; we're a movement towards a greener, healthier city.</p>

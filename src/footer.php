@@ -28,6 +28,11 @@
     const content = document.getElementById("main-content");
 
     loader.style.display = "none";
-    content.style.display = "block";
+    content.style.display = "flex";
+    content.style.setProperty("flex-direction", "column");
+    content.style.setProperty("align-items", "center");
+    content.style.setProperty("gap", "5em");
   });
 </script>
+<script src="./script.js"></script>
+<script src="./script_rotate.js"></script>
