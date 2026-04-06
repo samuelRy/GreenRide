@@ -1,3 +1,12 @@
+<!--
+    head.php — Shared <head> partial
+    
+    Included by every page. Contains:
+      - Character set & viewport meta tags
+      - Global stylesheet link
+      - Favicon reference
+      - Page title
+-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
