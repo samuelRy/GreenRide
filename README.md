@@ -24,7 +24,7 @@ GreenRide is a multi-page PHP website for a fictional urban mobility service. It
 
 ## Live preview
 
-> Add your deployed URL here once the project is hosted (e.g. Render, Railway, Fly.io).
+[Link to deployed GreenRide](https://greenride.onrender.com/)
 
 ---
 
